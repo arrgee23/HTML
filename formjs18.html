@@ -1,0 +1,35 @@
+<html>
+<head>
+	<script type="text/javascript">
+
+		function isvalid_login(str)
+		{
+			login_regex = /^\w+@(\w+)(\.(\w+))+$/;
+			return login_regex.test(str);
+		}
+		function isvalid_password(str)
+		{
+			password_regex = /^\w{6,32}$/;;
+			return password_regex.test(str);
+		}
+		function handler() 
+		{
+			alert("click me not");
+		}
+	
+	</script>
+</head>
+<body>
+	<form action="#">
+		<br>
+		Login Names:
+		<input type="text" name="login"/>
+		<br>
+		Password:
+		<input type="password" name="password"/>
+		<br>
+		<input type="submit" value="ok" onclick="handler()"/>
+	</form>
+	<button onclick="handler()">aksjdhk</button>
+</body>
+</html>
